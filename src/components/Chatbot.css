@@ -1,0 +1,24 @@
+.chatbot-button{
+background-color: rgb(239, 239, 239);
+padding: 18px;
+height: 70px;
+width: 70px;
+border-radius: 100px;
+border: none;
+box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+position: fixed;
+bottom: 30px;
+right: 30px;
+cursor: pointer;
+transition: 0.15s;
+}
+
+.chatbot-button img{
+height: 100%;
+margin-top: 2px;
+}
+
+.chatbot-button:hover{
+  background-color: rgb(216, 216, 216);
+  padding: 15px;
+}

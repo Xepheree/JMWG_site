@@ -1,0 +1,58 @@
+.main-wrapper{
+  margin-top: 70px;
+  display: flex;
+  height: 650px;
+}
+
+.welcome-img{
+  transform: scaleX(-1);
+  width: 400px;
+
+}
+
+.welcome-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.welcome-image-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, white 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.image-wrapper{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-wrapper{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-text{
+  max-width: 350px;
+}
+
+.welcome-text .title{
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.welcome-text .description{
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+
+

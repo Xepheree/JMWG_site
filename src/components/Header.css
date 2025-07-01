@@ -1,0 +1,53 @@
+.main-header{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px black;
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: white;
+}
+
+.right-section, .left-section{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.left-section{
+  width: 300px;
+}
+
+.right-section{
+  flex: 1;
+  max-width: 700px;
+  min-width: 500px;
+}
+
+.header-logo{
+  width: 200px;
+  margin: 20px;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+
+.right-section ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
