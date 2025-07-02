@@ -18,13 +18,19 @@
 }
 
 .left-section{
-  width: 300px;
+  width: 250px;
 }
 
 .right-section{
   flex: 1;
   max-width: 700px;
-  min-width: 550px;
+  /* min-width: 650px; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hamburger-menu{
+  margin-right: 40px;
 }
 
 .header-logo{
@@ -38,7 +44,12 @@
   width: 100%;
   align-items: center;
   justify-content: space-evenly;
+}
 
+@media (max-width: 900px) {
+  .nav-links{
+    display: none;
+  }
 }
 
 .nav-link{

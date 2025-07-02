@@ -39,6 +39,7 @@ margin-top: 2px;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  z-index: 995;
 }
 
 .chat-window.open{

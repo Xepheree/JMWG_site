@@ -1,3 +1,4 @@
+import { HamburgerMenu } from './HamburgerMenu';
 import './Header.css';
 
 export const Header = () => {
@@ -13,16 +14,22 @@ export const Header = () => {
           <li className='nav-link'>
             <a className='link' href="#">Life Group</a>
           </li>
+
+          <li className='nav-link'>
+            <a className='link' href="#">Faith Wall</a>
+          </li>
+
           <li className='nav-link'>
             <a className='link' href="#">My Devotions</a>
           </li>
-          <li className='nav-link'>
-            <a className='link' href="#">My Sword</a>
-          </li>
+
           <li className='nav-link'>
             <a className='link' href="#">Login</a>
           </li>
         </ul>
+
+        <HamburgerMenu />
+
       </div>
 
     </div>

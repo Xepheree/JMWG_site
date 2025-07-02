@@ -1,4 +1,4 @@
-import { Chatbot } from "./components/chatbot"
+import { Chatbot } from "./components/chatbot-components/Chatbot"
 import { Header } from "./components/Header"
 import { Welcome_section } from "./components/Welcome_section";
 import { About } from "./components/About";

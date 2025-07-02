@@ -1,6 +1,6 @@
 import { useState } from "react";
 import dayjs from "dayjs";
-import LoadingSpinner from '../assets/loading-spinner.gif'
+import LoadingSpinner from '../../assets/loading-spinner.gif'
 import './ChatInput.css'
 
 //temporary backend
