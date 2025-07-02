@@ -1,6 +1,8 @@
 import './Chatbot.css';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { ChatbotContent } from './ChatbotContent';
+import { chatbot } from 'supersimpledev'
+import { additionalResponses } from './additionalResponses.js'
 
 export const Chatbot = () => {
   const chatWindowRef = useRef(null);
@@ -9,6 +11,10 @@ export const Chatbot = () => {
   function toggleTab() {
     setIsOpenTab(prev => !prev);
   }
+
+  useEffect(() => {
+    chatbot.addResponses(additionalResponses)
+  }, []);
 
   return (
     <>

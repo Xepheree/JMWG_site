@@ -1,7 +1,12 @@
 import { useState } from "react";
 import dayjs from "dayjs";
 import LoadingSpinner from '../assets/loading-spinner.gif'
+import './ChatInput.css'
+
+//temporary backend
 import { Chatbot } from "supersimpledev";
+
+
 export const ChatInput = ({ chatMessages, setChatMessages }) => {
 
   const [inputText, setInputText] = useState('');
@@ -50,19 +55,22 @@ export const ChatInput = ({ chatMessages, setChatMessages }) => {
   }
 
   return (
-    <>
+    <div className="chat-input">
       <input
         type="text"
         placeholder='Send a message to Chatbot'
         className='message-box'
         value={inputText}
         onChange={saveInputText}
+        onKeyDown={(event) => {
+          event.key === 'Enter' && sendMessage()
+        }}
       />
       <button
         className='send-button'
         onClick={sendMessage}
       >Send
       </button>
-    </>
+    </div>
   );
 }

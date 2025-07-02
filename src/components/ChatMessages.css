@@ -1,0 +1,6 @@
+.chat-messages{
+  flex: 1;
+  overflow: scroll;
+  scrollbar-width: none;
+  position: relative;
+}
