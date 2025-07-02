@@ -1,0 +1,50 @@
+.user-picture, .chatbot-picture{
+  width: 50px;
+  border-radius: 30px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.user-picture{
+  margin-left: 10px;
+}
+
+.chatbot-picture{
+  margin-right: 10px;
+}
+
+.chat-message{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sender-user{
+  justify-content: flex-end;
+}
+
+.sender-chatbot{
+  justify-content: flex-start;
+}
+
+.message{
+  background-color: rgb(213, 213, 213);
+  padding: 15px 20px;
+  border-radius: 15px;
+  font-size: 15px;
+  max-width: 220px;
+}
+
+.message-user{
+  background-color: rgb(234, 234, 198);
+}
+
+.message-time{
+  font-size: 15px;
+  color: rgb(89, 89, 89);
+  margin-top: 5px;
+}
+
+.loading-spinner{
+  width: 50px;
+}

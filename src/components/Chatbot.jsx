@@ -1,25 +1,14 @@
 import './Chatbot.css';
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState } from 'react';
+import { ChatbotContent } from './ChatbotContent';
 
 export const Chatbot = () => {
   const chatWindowRef = useRef(null);
   const [isOpenTab, setIsOpenTab] = useState(false);
 
   function toggleTab() {
-    const newState = !isOpenTab;
-    setIsOpenTab(newState);
-
-    if (chatWindowRef.current) {
-      chatWindowRef.current.style.opacity = newState ? '1' : '0';
-    }
+    setIsOpenTab(prev => !prev);
   }
-
-  useEffect(() => {
-    // Optional: set initial opacity
-    if (chatWindowRef.current) {
-      chatWindowRef.current.style.opacity = '0';
-    }
-  }, []);
 
   return (
     <>
@@ -31,10 +20,12 @@ export const Chatbot = () => {
       </button>
 
       <div
-        className="chat-window"
+        className={`chat-window ${isOpenTab ? 'open' : ''}`}
         ref={chatWindowRef}
       >
-        Test
+        <ChatbotContent />
+
+
       </div>
     </>
   );
