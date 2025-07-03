@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import { HamburgerMenu } from './HamburgerMenu';
 import './Header.css';
 
 export const Header = () => {
+  const [windowOpen, setWindowOpen] = useState(false);
+
   return (
     <div className='main-header'>
 
@@ -10,7 +13,9 @@ export const Header = () => {
       </div>
 
       <div className="right-section">
-        <ul className='nav-links'>
+        <ul
+          className={`nav-links ${windowOpen ? 'open' : ''}`}
+        >
           <li className='nav-link'>
             <a className='link' href="#">Life Group</a>
           </li>
@@ -28,7 +33,7 @@ export const Header = () => {
           </li>
         </ul>
 
-        <HamburgerMenu />
+        <HamburgerMenu setWindowOpen={setWindowOpen} windowOpen={windowOpen} />
 
       </div>
 
